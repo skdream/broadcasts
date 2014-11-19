@@ -3,5 +3,9 @@ var config = {
   debug: true,
   session_secret: 'broadcasts_secret', // 务必修改
   db: 'mongodb://127.0.0.1/broadcasts',
-  db_name: 'broadcasts',
+ // db:'mongodb://127.0.0.1/donodejs',
+  db_name: 'broadcasts'
+  //db_name: 'donodejs'
  }
+ module.exports = config;
+ 

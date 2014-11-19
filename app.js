@@ -7,7 +7,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
-var config = require('./config')
+var config = require('./config');
+var webRouter = require('./routes/index');
 
 
 var routes = require('./routes/index');
@@ -39,7 +40,8 @@ app.use(session({
   saveUninitialized: true,
 }));
 */
-app.use('/', routes);
+//app.use('/', routes);
+app.use('/', webRouter);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
