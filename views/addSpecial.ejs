@@ -10,5 +10,12 @@
     <input type="submit" value="提交"/>
 </form>
 
+<ul>
+    <% for(var i= 0;i<items.length;i++){ %>
+    <li data-id="<%= items[i]._id%>"> <%= items[i].title %> </li>
+
+    <% } %>
+</ul>
+
 </body>
 </html>

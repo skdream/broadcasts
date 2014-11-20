@@ -6,9 +6,7 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/addSpecial',function(req, res){
-    res.render('addSpecial', {title:"添加专题"});
-});
+router.get('/addSpecial',special.index);
 
 router.post('/addSpecial', special.put);
 module.exports = router;

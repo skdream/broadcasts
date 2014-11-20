@@ -33,7 +33,17 @@ exports.put = function(req, res, next){
             return next(err);
             //console.log(err);
         }
-
         res.redirect('/addSpecial');
+    })
+};
+exports.index = function (req, res, next) {
+    Special.getAllSpecial(function(err,doc){
+        if(err){
+            return next(err);
+        }
+        return res.render('addSpecial',{
+            title:'添加专题',
+            items:doc
+        });
     })
 };
