@@ -27,7 +27,7 @@ exports.put = function(req, res, next){
     }
 
     Special.newAndSave(title,function(err, special){
-        console.log(1);
+
 
         if(err){
             return next(err);
@@ -44,6 +44,55 @@ exports.index = function (req, res, next) {
         return res.render('addSpecial',{
             title:'添加专题',
             items:doc
+        });
+    })
+};
+
+exports.showEdit = function (req, res, next) {
+    var sId = req.params.sid;
+    if(!sId){
+        return res.render('error/special',{error:"不存在该专题"});
+    }
+    Special.getSpecialById(sId, function (err, special) {
+
+       if(err || !special){
+           return res.render('error/special',{error:"不存在该专题1"});
+       }
+        console.log(err);
+        res.render('editSpecial',{
+            title:special.title
+        });
+    })
+};
+
+exports.update = function (req, res, next) {
+    var speId = req.params.sId;
+    var title = req.body.title;
+    Special.getSpecialById(speId,function(err,special){
+        if(!special){
+            res.render('error/error');
+            return;
+        }
+
+        var title = validator.trim(title);
+        title = validator.escape(title);
+        // 验证
+        var editError='';
+        if (title === '') {
+            editError = '标题不能是空的。';
+        } else if (title.length < 5 || title.length > 100) {
+            editError = '标题字数太多或太少。';
+        }
+
+        if(editError){
+            return res.render('error/special',{error:editError});
+        }
+
+        Special.updateSpecialById(speId,title,function(err){
+            if(err){
+                return next(err);
+            }
+            res.redirect('/addSpecial/' + speId);
         });
     })
 };

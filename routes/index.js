@@ -9,4 +9,9 @@ router.get('/', function(req, res) {
 router.get('/addSpecial',special.index);
 
 router.post('/addSpecial', special.put);
+
+router.get('/editSpecial/:sid', special.showEdit);
+router.post('/updateSpecial',special.update);
+
+
 module.exports = router;

@@ -12,10 +12,12 @@
 
 <ul>
     <% for(var i= 0;i<items.length;i++){ %>
-    <li data-id="<%= items[i]._id%>"> <%= items[i].title %> </li>
+    <li data-id="<%= items[i]._id%>"> <%= items[i].title %> <a href="/editSpecial/<%= items[i]._id%>">编辑</a> </li>
 
     <% } %>
 </ul>
+
+
 
 </body>
 </html>
