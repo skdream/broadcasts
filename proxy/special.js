@@ -9,7 +9,7 @@ var ObjectId = require('mongodb').ObjectID;
 //console.log(Special);
 
 exports.getAllSpecial = function (callback) {
-    Special.find().sort({create_at:-1}).exec(callback);
+    Special.find().sort({update_at:-1}).exec(callback);
 };
 exports.newAndSave = function(title, callback){
 
@@ -31,11 +31,11 @@ exports.updateSpecialById = function (specialId, title, callback) {
 
 exports.getSpecialById = function (specialId, callback) {
 
-    Special.findOne({"_id" : ObjectId("546c8a29d99324fc1e4a023f")},function(err, special){
-//      console.log(err);
+    Special.findOne({_id : specialId},function(err, special){
+
         if(err ){
             return callback(err);
         }
-        callback(special);
+        callback(err, special);
     })
 };

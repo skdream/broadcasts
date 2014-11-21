@@ -60,21 +60,24 @@ exports.showEdit = function (req, res, next) {
        }
         console.log(err);
         res.render('editSpecial',{
-            title:special.title
+            title:special.title,
+            id:special._id
         });
     })
 };
 
 exports.update = function (req, res, next) {
-    var speId = req.params.sId;
+    var speId = req.body._id;
     var title = req.body.title;
+
     Special.getSpecialById(speId,function(err,special){
+        console.log(speId)
         if(!special){
-            res.render('error/error');
+            res.render('error/special',{error:err});
             return;
         }
 
-        var title = validator.trim(title);
+        title = validator.trim(title);
         title = validator.escape(title);
         // 验证
         var editError='';
@@ -92,7 +95,7 @@ exports.update = function (req, res, next) {
             if(err){
                 return next(err);
             }
-            res.redirect('/addSpecial/' + speId);
+            res.redirect('/addSpecial');
         });
     })
 };
