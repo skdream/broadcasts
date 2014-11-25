@@ -1,0 +1,118 @@
+/*  
+* @description: 蜗牛直播后台  
+* @author: wangchao  
+* @update: name (2014-11-17 13:53)  
+*/ 
+.container{
+	position: relative;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 100;
+	background: #f1f1f1;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+}
+.main{
+	overflow: hidden;
+	padding: 10px;
+}
+.login-bar{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.login-bar .login-bar-left{
+	width: 10px;
+	height: 16px;
+	float: left;
+	background: url("../images/common/back.png") center no-repeat;
+	background-size: 10px 16px;
+}
+.login-bar .login-bar-right{
+	color: #666666;
+	width: 100%;
+	font:18px/18px "微软雅黑";
+	font-weight: bold;
+	text-align: center;
+}
+.fit-area{
+	width: 100%;
+	margin-top: 20px;
+	background: #fff;
+	border-radius: 4px;
+	padding: 10px;
+	color:#666666;
+	font:12px/24px "微软雅黑";
+	overflow: hidden;
+}
+.fit-area .align-right{
+	text-align: right;
+}
+.fit-base{
+	width:100%;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+}
+.fit-base .base-input{
+	width:100%;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+}
+.fit-time{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin-top:10px;
+}
+.fit-time-8{
+	width:100%;
+	overflow: hidden;
+	margin-top:10px;
+}
+.fit-time-14{
+	width:100%;
+	overflow: hidden;
+	margin-top:10px;
+}
+.fit-undulate{
+	width:100%;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.undulata-input{
+	width:100%;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+}
+.fit-font{
+	width:100%;
+	overflow: hidden;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+.width-100{
+	width:100%;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+}
+.fit-btn{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.fit-btn a{
+	text-decoration: none;
+}
+.fit-area .col-xs-4,.col-xs-3{
+	padding: 0;
+}

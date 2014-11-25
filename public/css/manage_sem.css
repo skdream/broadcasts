@@ -1,0 +1,129 @@
+/*  
+* @description: 蜗牛直播后台  
+* @author: wangchao  
+* @update: name (2014-11-14 17:15)  
+*/ 
+.container{
+	position: relative;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 100;
+	background: #f1f1f1;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+}
+.main{
+	overflow: hidden;
+	padding: 10px;
+}
+.login-bar{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.login-bar .login-bar-left{
+	width: 10px;
+	height: 16px;
+	float: left;
+	background: url("../images/common/back.png") center no-repeat;
+	background-size: 10px 16px;
+}
+.login-bar .login-bar-right{
+	color: #666666;
+	width: 100%;
+	font:18px/18px "微软雅黑";
+	font-weight: bold;
+	text-align: center;
+}
+.sem-area{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	background: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+.sem-area .sem-inp{
+	line-height: 20px;
+	float: left;
+	overflow: hidden;
+}
+.sem-inp a{
+	text-decoration: none;
+}
+.sem-inp input{
+	height: 40px;
+	line-height: 90px;
+	width: 100%;
+	font:20px/40px "微软雅黑";
+}
+.sem-inp input:focus{
+	outline: 0;
+}
+.sem-font{
+	height: 20px;
+	color: #666666;
+	float: left;
+	text-align: center;
+	font:12px/20px "微软雅黑";
+}
+.sem-change-btn{
+	color: #ff7f00;
+	background: #fff;
+	border: 2px solid #ff7f00;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border-radius: 4px;
+	font: 10px/10px "微软雅黑";
+}
+.sem-change-btn:hover{
+	color: #ff7f00;
+	background: #fff;
+	border: 2px solid #ff7f00;
+}
+.margin-top-10{
+	margin-top:10px;
+}
+.new-sem-btn{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.new-sem-btn a{
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	display: block;
+	border: 2px #bbbbbb solid;
+	border-radius: 4px;
+	height: 35px;
+}
+.plus-btn img{
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+}
+.plus-btn span{
+	color: #bbbbbb;
+	font:15px/35px "微软雅黑";
+}

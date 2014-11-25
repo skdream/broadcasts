@@ -1,0 +1,271 @@
+/*  
+* @description: 蜗牛直播后台  
+* @author: wangchao  
+* @update: name (2014-11-17 13:53)  
+*/ 
+.container{
+	position: relative;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 100;
+	background: #f1f1f1;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+}
+.main{
+	overflow: hidden;
+	padding: 10px;
+}
+.select-area{
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+	padding: 20px;
+	width: 100%;
+	overflow: hidden;
+}
+.select-area .select{
+	color:#999999;
+	/*border: 1px solid;*/
+	height: 35px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 4px;
+	font:15px/35px "微软雅黑";
+}
+.select-area .select select{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 4px;
+}
+.select .down{
+	width: 17px;
+	height: 9px;
+	float: right;
+	margin-top:13px;
+	background: url("../images/down.png") center no-repeat;
+	background-size: 17px 9px;
+}
+.select .top{
+	width: 17px;
+	height: 9px;
+	float: right;
+	margin-top:13px;
+	background: url("../images/top.png") center no-repeat;
+	background-size: 17px 9px;
+}
+.a-area{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.select-area .a-copy{
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin:7px 10px 0px 30px;
+	background: url("../images/copy.png") center no-repeat;
+	background-size: 11px 11px;
+}
+.select-area .a-go{
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin:7px 10px 0px 30px;
+	background: url("../images/go.png") center no-repeat;
+	background-size: 11px 11px;
+}
+.select-area .copy{
+	height: 20px;
+	line-height: 20px;
+}
+.select-area .go{
+	height: 20px;
+	line-height: 20px;
+}
+.select-area .copy a{
+	color:#666666;
+	font:10px/10px "微软雅黑";
+}
+.select-area .go a{
+	color:#666666;
+	font:10px/10px "微软雅黑";
+}
+.main .menu{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	padding:10px;
+}
+.menu .col-xs-3{
+	padding: 0;
+}
+.menu .down-font{
+	color: #666666;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	height: 12px;
+	line-height: 12px;
+	font:10px/10px "微软雅黑";
+}
+.main .a-ad{
+	width: 100%;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.a-ad img{
+	width: 27px;
+	height: 25px;
+	margin: 0 auto;
+}
+.main .a-rs{
+	width: 100%;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.a-rs img{
+	width: 32px;
+	height: 25px;
+	margin: 0 auto;
+}
+.main .a-zt{
+	width: 100%;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.a-zt img{
+	width: 27px;
+	height: 25px;
+	margin: 0 auto;
+}
+.main .a-fb{
+	width: 100%;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.a-fb img{
+	width: 27px;
+	height: 25px;
+	margin: 0 auto;
+}
+.table-area{
+	margin-top: 10px;
+}
+.table-responsive{
+	margin-bottom: 0;
+}
+.table tr td {
+	border-right: 1px solid #ddd;
+}
+.table .title{
+	color:#666666;
+	background: #f6f6f6;
+	font:10px/10px "微软雅黑";
+}
+.table .content{
+	background: #fff;
+	font:10px/10px "微软雅黑";
+}
+.table .content td{
+	vertical-align: middle;
+}
+.content a{
+	text-decoration: none;
+}
+.table .change{
+	color: #ff7f00;
+	background: #fff;
+	border: 2px solid #ff7f00;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border-radius: 4px;
+	font:10px/11px "微软雅黑";
+}
+.show-much{
+	width: 100%;
+	float: left;
+	background: #fff;
+	height: 80px;
+	line-height: 40px;
+	padding: 20px 0px 20px 0px;
+}
+.show-much .a-more{
+	float: left;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+}
+.show-much a{
+	text-decoration: none;
+}
+.show-much img{
+	width: 13px;
+	height: 10px;
+}
+.show-much .draft-more{
+	color: #afafaf;
+	font:10px/10px "微软雅黑";
+}
+.show-much .much-select{
+	width: 100%;
+	height: 30px;
+	font:12px/30px "微软雅黑";
+	border-radius: 4px;
+}
+.show-much .col-xs-6{
+	padding: 0;
+}
+.prev-page,.next-page{
+	background: #ff7f00;
+	width: 100%;
+}
+.page-btn{
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border-radius: 4px;
+	height: 30px;
+	font: 12px/30px "微软雅黑";
+}
+.page-btn:hover{
+	background: #f8b878;
+	color: #fff;
+}

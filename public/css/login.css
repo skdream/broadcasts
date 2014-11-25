@@ -1,0 +1,185 @@
+/*  
+* @description: 蜗牛直播后台  
+* @author: wangchao  
+* @update: name (2014-11-14 11:43)  
+*/ 
+.wrapper{
+	width: 100%;
+	height:100%;
+}
+.container{
+	position: relative;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 100;
+	background: #f1f1f1;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.main{
+	overflow: hidden;
+	padding: 10px;
+}
+.login-bar{
+	width: 100%;
+	overflow: hidden;
+}
+.login-bar .login-bar-left{
+	width: 10px;
+	height: 16px;
+	float: left;
+	background: url("../images/common/back.png") center no-repeat;
+	background-size: 10px 16px;
+}
+.login-bar .login-bar-right{
+	color: #666666;
+	width: 100%;
+	font:18px/18px "微软雅黑";
+	font-weight: bold;
+	text-align: center;
+}
+.login-area{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	margin-top: 20px;
+	background: #fff;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 1px #e0e0e0 solid;
+}
+.login-area .center-inp{
+	width: 60%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.login-area .left-img{
+	width: 20%;
+	float: left;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+}
+.left-img img{
+	width: 13px;
+	height: 16px;
+}
+.right-img img{
+	width: 12px;
+	height: 13px;
+	display: none;
+}
+.login-area .right-img{
+	width: 20%;
+	float: right;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+}
+.login-area .center-inp{
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+}
+.center-inp input{
+	height: 20px;
+	line-height: 45px;
+	width: 100%;
+	font:10px/20px "微软雅黑";
+	border: 0;
+}
+.center-inp input:focus{
+	outline: 0;
+}
+
+.login-area-t{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+}
+.login-area-t .center-inp{
+	width: 60%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.login-area-t .left-img{
+	width: 20%;
+	float: left;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+}
+.login-area-t .right-img{
+	width: 20%;
+	float: right;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+}
+.login-area-t .center-inp{
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+}
+.center-inp-t input{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	font:20px/40px "微软雅黑";
+}
+.login-font{
+	color: #666666;
+	margin-top: 20px;
+	font:12px/12px "微软雅黑";
+}
+.login-font .checkbox{
+	zoom:80%;
+	float: left;
+	margin-top:2px;
+	margin-right: 10px;
+}
+.login-font label{
+	font:10px/10px "微软雅黑";
+}
+.login-btn{
+	margin-top: 30px;
+}
+.login-btn a{
+	text-decoration: none;
+}
+.pop{
+	width: 220px;
+	height: 80px;
+	background: #fff;
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+}
+.pop p{
+	width: 100%;
+	height:40px;
+	color:#666666;
+	line-height: 40px;
+	font:10px/40px "微软雅黑";
+	border-bottom: 1px #666666 solid;
+	margin: 0;
+}
+.pop a{
+	color:#666666;
+	background: #f6f6f6;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	font:10px/40px "微软雅黑";
+	text-decoration: none;
+	border-radius: 5px;
+}
+.blockMsg{
+	border-radius: 5px;
+	top:30% !important;
+}

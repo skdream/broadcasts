@@ -9,19 +9,17 @@ mongoose.connect(config.db, function(err){
 });
 // models
 require('./special');
+require('./post');
+require('./category');
 //require('./advertise');
-//require('./article');
 //require('./online');
 
 
-exports.Special     = mongoose.model('Special');
+exports.Special  = mongoose.model('Special');
+exports.Post  = mongoose.model('Post');
+exports.Category  = mongoose.model('Category');
 
-/* just a test
- var sp =  mongoose.model('Special');
- var aa = new sp();
- console.log(aa);
- */
-//console.log(mongoose.model('Special'));
+
+
 //exports.Advertise   = mongoose.model('Advertise');
-//exports.Article     = mongoose.model('Article');
 //exports.Online      = mongoose.model('Online');
