@@ -11,10 +11,12 @@ var ObjectId = require('mongodb').ObjectID;
 exports.getAllSpecial = function (callback) {
     Special.find().sort({update_at:-1}).exec(callback);
 };
-exports.newAndSave = function(title, callback){
+exports.newAndSave = function(opt, callback){
 
     var special = new Special();
-    special.title = title;
+    special.title = opt.title;
+    special.special_code = opt.code;
+    special.category_id = opt.category_id;
     special.save(callback);
 
 };
@@ -37,5 +39,16 @@ exports.getSpecialById = function (specialId, callback) {
             return callback(err);
         }
         callback(err, special);
+    })
+};
+
+exports.getSpecialByCode= function (specialCode, callback) {
+
+    Special.findOne({special_code : specialCode},function(err, special){
+
+        if(err ){
+            return callback(err);
+        }
+        callback(null, special);
     })
 };

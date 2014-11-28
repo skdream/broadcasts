@@ -7,7 +7,7 @@ var ObjectId = Schema.ObjectId;
 
 var SpecialSchema = new Schema({
 	category_id:{type:ObjectId},
-    specialCode:{type:String},
+    special_code:{type:String},
     title:{type: String},
     create_at:{type: Date, default:Date.now},
     update_at:{type:Date, default:Date.now}

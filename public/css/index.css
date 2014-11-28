@@ -30,18 +30,24 @@
 }
 .select-area .select{
 	color:#999999;
-	/*border: 1px solid;*/
+	border: 1px solid;
 	height: 35px;
 	padding-left: 5px;
 	padding-right: 5px;
 	border-radius: 4px;
 	font:15px/35px "微软雅黑";
+	overflow: hidden;
 }
-.select-area .select select{
+/*.select-area .select select{
 	width: 100%;
 	height: 36px;
 	line-height: 36px;
 	border-radius: 4px;
+}*/
+.select-area ul{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
 }
 .select .down{
 	width: 17px;
@@ -269,3 +275,51 @@
 	background: #f8b878;
 	color: #fff;
 }
+/*blockUI css change  2014-11-25 14:37*/
+.blockMsg{
+	top:69px !important;
+	border-radius: 5px;
+	width: 100%;
+	margin: 0 auto !important;
+	left: 0 !important;
+	padding: 0px 20px 20px 20px !important;
+	background: none !important;
+}
+.blockMsg ul{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+	font: 14px/30px "微软雅黑";
+	text-align: left;
+}
+.blockMsg .select{
+	color: #999999;
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 4px;
+	font: 14px/35px "微软雅黑";
+	overflow: hidden;
+	background: #fff;
+	height: 220px;
+	overflow-y:auto;
+}
+.blockMsg .select .ul-list span{
+	padding-left: 20px;
+}
+.blockMsg .select .ul-list span a{
+    color: #999999;
+}
+.blockMsg .select .ul-list li{
+	border-top: 1px #e0e0e0 solid;
+}
+.blockMsg .ul-wrap li{
+	cursor: pointer;
+	border-top: 1px #e0e0e0 solid;
+}
+.blockMsg .ul-wrap .pd-left{
+	padding-left:10px; 
+}
+/*.blockMsg ul li:hover{
+	background: #eeeeee;
+}*/

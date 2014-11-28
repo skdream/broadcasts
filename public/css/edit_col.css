@@ -23,8 +23,8 @@
 }
 .login-bar{
 	width: 100%;
+	padding-top:10px;
 	overflow: hidden;
-	margin-bottom: 20px;
 }
 .login-bar .login-bar-left{
 	width: 10px;
@@ -39,44 +39,60 @@
 	font:18px/18px "微软雅黑";
 	font-weight: bold;
 	text-align: center;
+	height: 20px;
 }
 .sem-area{
 	width: 100%;
-	height:30px;
-	line-height: 30px;
+	margin-top: 20px;
 	background: #fff;
-	border-radius: 4px 4px 0 0;
+	border-radius: 4px;
 	padding: 10px;
-	border-bottom: 1px #e0e0e0 solid;
+	overflow: hidden;
 }
 .sem-area .sem-inp{
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	line-height: 20px;
 	float: left;
+	overflow: hidden;
 }
 .sem-inp input{
-	height: 40px;
-	line-height: 90px;
+	height: 25px;
+	line-height: 25px;
 	width: 100%;
-	font:20px/40px "微软雅黑";
+	font:10px/25px "微软雅黑";
 }
 .sem-inp input:focus{
 	outline: 0;
 }
 .sem-font{
-	height: 10px;
+	height: 20px;
 	color: #666666;
 	float: left;
 	text-align: center;
-	font:10px/10px "微软雅黑";
+	font:12px/20px "微软雅黑";
 }
-.sem-change-btn{
-	color: #ff7f00;
-	background: #fff;
-	border: 2px solid #ff7f00;
+.sem-btn{
+	margin-top: 20px;
+	padding-left:5%;
+	padding-right:5%;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.sem-btn a{
+	text-decoration: none;
+}
+.btn-cancel {
+	color: #fff;
+	background-color: #ccc;
+}
+.btn-publish{
+	color: #fff;
+	background-color:#7bbe6e;
+}
+.show-btn{
+	color: #fff;
 	display: inline-block;
-	padding: 6px 12px;
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 400;
@@ -93,63 +109,24 @@
 	user-select: none;
 	background-image: none;
 	border-radius: 4px;
+	width: 70px;
+	height: 25px;
+	font: 15px/25px "微软雅黑";
 }
-.sem-change-btn:hover{
-	color: #ff7f00;
-	background: #fff;
-	border: 2px solid #ff7f00;
-}
-.margin-top-10{
-	margin-top:10px;
-}
-.new-sem-btn{
-	width: 100%;
+.col-name{
 	overflow: hidden;
+}
+.col-code{
 	margin-top: 20px;
-}
-.new-sem-btn a{
-	text-decoration: none;
-}
-.big-area{
-	background: #fff;
-	border-radius: 0 0 4px 4px ;
-	padding: 10px;
-	width: 100%;
 	overflow: hidden;
 }
-.big-btn{
-	width: 102px;
-	height: 35px;
-	float: left;
-	background: url("../images/big.png") center no-repeat;
-	background-size: 102px 35px;
-}
-.little-btn{
-	width: 102px;
-	height: 35px;
-	float: left;
-	background: url("../images/little.jpg") center no-repeat;
-	background-size: 102px 35px;
-}
-.main .big-font{
-	color:#999999;
-	font:10px/16px "微软雅黑";
-	margin-top: 10px;
-}
-.left-ad{
-	background: #fff;
-	border-radius: 0 0 4px 4px;
-	padding: 10px;
-	width: 100%;
-	overflow: hidden;
-}
-.right-ad{
-	background: #fff;
-	border-radius: 0 0 4px 4px;
-	padding: 10px;
-	width: 100%;
-	overflow: hidden;
-}
-.left-top-20{
+.col-msg{
+	font: 10px/20px "微软雅黑";
+	color: #999999;
 	margin-top: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+.sem-area .col-xs-4,.col-xs-8{
+	padding: 0;
 }

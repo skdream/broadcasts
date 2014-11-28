@@ -25,6 +25,7 @@
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 20px;
+	margin-top: 10px;
 }
 .login-bar .login-bar-left{
 	width: 10px;
@@ -39,21 +40,21 @@
 	font:18px/18px "微软雅黑";
 	font-weight: bold;
 	text-align: center;
+	height: 20px;
 }
 .sem-area{
 	width: 100%;
-	height:30px;
-	line-height: 30px;
 	background: #fff;
-	border-radius: 4px 4px 0 0;
 	padding: 10px;
-	border-bottom: 1px #e0e0e0 solid;
+	overflow: hidden;
 }
 .sem-area .sem-inp{
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	line-height: 20px;
 	float: left;
+	overflow: hidden;
+}
+.sem-inp a{
+	text-decoration: none;
 }
 .sem-inp input{
 	height: 40px;
@@ -65,11 +66,11 @@
 	outline: 0;
 }
 .sem-font{
-	height: 10px;
+	height: 20px;
 	color: #666666;
 	float: left;
 	text-align: center;
-	font:10px/10px "微软雅黑";
+	font:14px/20px "微软雅黑";
 }
 .sem-change-btn{
 	color: #ff7f00;
@@ -93,63 +94,122 @@
 	user-select: none;
 	background-image: none;
 	border-radius: 4px;
+	font: 10px/10px "微软雅黑";
 }
 .sem-change-btn:hover{
 	color: #ff7f00;
 	background: #fff;
 	border: 2px solid #ff7f00;
 }
-.margin-top-10{
-	margin-top:10px;
-}
-.new-sem-btn{
+/*.new-sem-btn{
 	width: 100%;
 	overflow: hidden;
 	margin-top: 20px;
 }
 .new-sem-btn a{
 	text-decoration: none;
-}
-.big-area{
-	background: #fff;
-	border-radius: 0 0 4px 4px ;
-	padding: 10px;
+	text-align: center;
 	width: 100%;
-	overflow: hidden;
-}
-.big-btn{
-	width: 102px;
+	display: block;
+	border: 2px #bbbbbb solid;
+	border-radius: 4px;
 	height: 35px;
-	float: left;
-	background: url("../images/big.png") center no-repeat;
-	background-size: 102px 35px;
 }
-.little-btn{
-	width: 102px;
-	height: 35px;
-	float: left;
-	background: url("../images/little.jpg") center no-repeat;
-	background-size: 102px 35px;
+.plus-btn img{
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
 }
-.main .big-font{
-	color:#999999;
-	font:10px/16px "微软雅黑";
-	margin-top: 10px;
+.plus-btn span{
+	color: #bbbbbb;
+	font:15px/35px "微软雅黑";
+}*/
+.top-btn{
+	text-align: center;
 }
-.left-ad{
-	background: #fff;
-	border-radius: 0 0 4px 4px;
-	padding: 10px;
+.top-btn img{
+	width: 88px;
+	height: 30px;
+}
+.main .border-top{
+	border-top: 1px #e0e0e0 solid
+}
+.sem-area ul{
+	font:12px/16px "微软雅黑";
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.li-area{
 	width: 100%;
+	padding: 10px;
 	overflow: hidden;
 }
-.right-ad{
-	background: #fff;
-	border-radius: 0 0 4px 4px;
-	padding: 10px;
-	width: 100%;
-	overflow: hidden;
+.ul-bg{
+	background: #f9f9f9;
 }
-.left-top-20{
-	margin-top: 20px;
+.main .menu{
+	overflow:hidden;
+	list-style-type: none;
+	font:14px/16px "微软雅黑";
+	padding: 0px;
+	margin: 0;
+}
+.main .menu a{
+	text-decoration: none;
+}
+.level-2{
+	list-style-type: none;
+	overflow:hidden;
+	list-style-type: none;
+	font:12px/16px "微软雅黑";
+	padding: 0;
+	margin: 0;
+	display: none;
+	background: #f9f9f9;
+}
+.level-2 li{
+	overflow: hidden;
+	border-top: 1px #e0e0e0 solid;
+}
+.level-1 .li-title{
+	padding: 10px;
+	display: block;
+	color: #333333;
+	width: 75%;
+	float: left;
+	font:14px/16px "微软雅黑";
+}
+.li-title img{
+	width: 7px;
+	height: 12px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+.level-1 .li-wrap{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	border-top: 1px #e0e0e0 solid;
+}
+.change-btn-wrap{
+	overflow: hidden;
+	display: block;
+	padding: 5px;
+	margin: 0 auto;
+	width: 25%;
+	float: left;
+}
+.list-span{
+	display: block;
+	width: 75%;
+	float: left;
+	padding: 10px 10px 10px 26px;
+}
+.list-span-wrap{
+	float: left;
+	display: block;
+	width: 25%;
+	padding: 5px;
 }

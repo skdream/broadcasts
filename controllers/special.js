@@ -2,11 +2,15 @@
  * Created by jiyj on 2014/11/19.
  */
 var Special = require('../proxy').Special;
+var Category = require('../proxy').Category;
 var validator = require('validator');
-exports.put = function(req, res, next){
+exports.addSpecial = function(req, res, next){
 
     var title = validator.trim(req.body.title);
+    var special_code = validator.trim(req.body.special_code);
+    var category_id = req.body.category_id;
     title = validator.escape(title);
+
 
     // 验证
     var editError;
@@ -14,6 +18,8 @@ exports.put = function(req, res, next){
         editError = '标题不能是空的。';
     } else if (title.length < 5 || title.length > 100) {
         editError = '标题字数太多或太少。';
+    }else if(special_code === ''){
+        editError = "项目代码不能是空的。"
     }
 
     // END 验证
@@ -26,24 +32,40 @@ exports.put = function(req, res, next){
         });
     }
 
-    Special.newAndSave(title,function(err, special){
+    var opt = {
+        title :title,
+        special_code : special_code,
+        category_id : category_id
+    };
 
-
+    Special.getSpecialByCode(special_code,function(err, docs){
         if(err){
             return next(err);
-            //console.log(err);
         }
-        res.redirect('/addSpecial');
-    })
+        if(docs){
+            res.render('error/special',{error:'已存在相同项目代码'});
+        }else{
+            Special.newAndSave(opt,function(err, special){
+
+                if(err){
+                    return next(err);
+                    //console.log(err);
+                }
+                res.redirect('/addSpecial');
+            })
+        }
+
+    });
+
 };
 exports.index = function (req, res, next) {
-    Special.getAllSpecial(function(err,doc){
+    Category.getAllCategory(function(err,docs){
         if(err){
             return next(err);
         }
-        return res.render('addSpecial',{
+        return res.render('special',{
             title:'添加专题',
-            items:doc
+            cates:docs
         });
     })
 };

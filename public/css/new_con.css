@@ -1,0 +1,153 @@
+/*  
+* @description: 蜗牛直播后台  
+* @author: wangchao  
+* @update: name (2014-11-17 13:53)  
+*/ 
+.container{
+	position: relative;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 100;
+	background: #f1f1f1;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+}
+.main{
+	overflow: hidden;
+	padding: 10px;
+}
+.login-bar{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.login-bar .login-bar-left{
+	width: 10px;
+	height: 16px;
+	float: left;
+	background: url("../images/common/back.png") center no-repeat;
+	background-size: 10px 16px;
+}
+.login-bar .login-bar-right{
+	color: #666666;
+	width: 100%;
+	font:18px/18px "微软雅黑";
+	font-weight: bold;
+	text-align: center;
+	height: 20px;
+}
+.edit-area{
+	width: 100%;
+	margin-top: 20px;
+	background: #fff;
+	border-radius: 4px;
+	padding: 10px;
+	color:#666666;
+	font:12px/12px "微软雅黑";
+	overflow: hidden;
+}
+.edit-area .edit-title{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}
+.edit-area .edit-title input{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}
+.edit-con-list{
+	height: 25px;
+	line-height: 25px;
+}
+.list-3{
+	width: 15%;
+	float: left;
+}
+.list-9{
+	width: 85%;
+	float: left;
+}
+.edit-con{
+	width: 100%;
+	line-height: 50px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.list-9 .textarea{
+	width: 100%;
+	line-height: 20px;
+}
+.edit-con .left-15{
+	width: 100%;
+	float: left;
+	margin-left: 15%;
+	height: 30px;
+	line-height: 30px;
+}
+.edit-pic img{
+	width: 100%;
+}
+.edit-pic{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.upload-pic{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.upload-pic .a-bg{
+	width: 102px;
+	height: 35px;
+	display: block;
+	background: url("../images/little.jpg") center no-repeat;
+	background-size: 102px 35px;
+	margin:0 auto;
+}
+.edit-btn{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 20px;
+}
+.delete-btn{
+	background: #ff5400;
+}
+.upload-btn{
+	background: #7bbe6e;
+}
+.edit-btn .show-btn{
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border-radius: 4px;
+	width: 70px;
+	height: 25px;
+	font:15px/25px "微软雅黑";
+}
+.edit-btn a{
+	text-decoration: none;
+}
+.margin-bototm-10{
+	margin-bottom: 10px;
+}
