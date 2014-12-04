@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>蜗牛直播后台</title>
+    <meta name="description" content="蜗牛移动">
+    <meta name="author" content="woniu" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="common/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="header row">
+				<div class="col-xs-2">
+					<a class="logo" href=""></a>
+				</div>
+  				<div class="col-xs-7 header-center">
+  					<em class="big-font">蜗牛直播</em>
+					<em class="little-font">后台管理系统</em>
+  				</div>
+			</div>
+            <form action="" method="post">
+			<div class="main">
+				<div class="login-bar">
+					<a href="javascript:history(-1)" class="login-bar-left"></a>
+					<div class="login-bar-right">登录</div>
+				</div>
+
+				<div class="login-area">
+					<div class="left-img"><img src="images/user.png"></div>
+					<div class="center-inp">
+						<input type="text" name="usename" placeholder="通行证" id="username"/>
+					</div>
+					<div class="right-img" id="uname-img">
+						<img src="images/input.png">
+					</div>
+				</div>
+				<div class="login-area-t">
+					<div class="left-img"><img src="images/pwd.png"></div>
+					<div class="center-inp">
+						<input type="password" name="psd" placeholder="密码" id="password"/>
+					</div>
+					<div class="right-img" id="pwd-img"><img src="images/input.png"></div>
+				</div>
+
+				<div class="login-font">
+					<!-- 通行证与OA账户互通 -->
+					<input type="checkbox" name="mian" id="checkbox" class="checkbox">
+					<label for="checkbox">一个月免登陆</label>
+				</div>
+
+				<div class="login-btn">
+					<input type="submit" value="登 录" class="common-btn" id="login"/>
+				</div>
+			</div>
+            </form>
+		</div>
+	</div>
+<script type="text/template" id="popFail">
+	<div class="pop">
+		<p>账号或密码错误，请重新输入</p>
+		<a href="">确 定</a>
+	</div>
+</script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="common/bootstrap.min.js"></script>
+<script type="text/javascript" src="common/blockUI.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

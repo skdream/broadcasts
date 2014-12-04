@@ -79,8 +79,10 @@ body{
 	width: 100%;
 	height: 30px;
 	font:15px/30px "微软雅黑";
+    border: 0;
 }
 .common-btn:hover{
 	color:#fff;
 	background: #e77300;
+    border: 0;
 };

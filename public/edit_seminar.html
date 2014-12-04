@@ -9,7 +9,7 @@
     <meta http-equiv="cleartype" content="on">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="common/bootstrap.min.css">
-    <link rel="stylesheet" href="css/new_col.css"/>
+    <link rel="stylesheet" href="css/new_seminar.css"/>
     <link rel="stylesheet" href="css/common.css"/>
 </head>
 <body>
@@ -29,16 +29,28 @@
 					<a class="login-out" href="">退出</a>
 				</div>
 			</div>
-            <form action="" method="post">
 			<div class="main">
 				<div class="login-bar">
 					<a href="javascript:history.go(-1)" class="login-bar-left"></a>
-					<div class="login-bar-right">新增项目</div>
+					<div class="login-bar-right">专题修改</div>
 				</div>
+                <form action="" method="post">
 				<div class="sem-area">
+					<div class="sem_select">
+						<div class="col-xs-4">
+							<div class="sem-font pull-right">所属项目：</div>
+						</div>
+						<div class="col-xs-8">
+							<select name="project">
+								<option value="01">蜗牛移动</option>
+								<option value="02">蜗牛移动</option>
+								<option value="03">蜗牛移动</option>
+							</select>
+						</div>
+					</div>
 					<div class="col-name">
 						<div class="col-xs-4">
-							<div class="sem-font">新项目名称：</div>
+							<div class="sem-font pull-right">修改项目名称：</div>
 						</div>
 						<div class="col-xs-8">
 							<div class="sem-inp">
@@ -49,7 +61,7 @@
 
 					<div class="col-code">
 						<div class="col-xs-4">
-							<div class="sem-font">新项目名称：</div>
+							<div class="sem-font pull-right">修改项目名称：</div>
 						</div>
 						<div class="col-xs-8">
 							<div class="sem-inp">
@@ -59,7 +71,7 @@
 					</div>
 
 					<div class="col-msg">
-						*此代码慎重填写，不可更改。自动生成专题链接live.snail.com/A/B.html  A即为此处填入的代码。
+						 * 专题代码全部用小写英文字母、数字、下划线的组合，其中不得包含汉字、空格和特殊字符；专题代码应以英文为主（不到万不得已不要以拼音作为名称），如2014CJ直播专题命名为cj2014,2014年中国杯帆船赛命名为2014chncup等。专题代码、所属栏目务必慎重填写，专题一经生成不可更改。自动生成专题链接live.snail.com/B/A.html  A即为此处填入的代码。
 					</div>
 				</div>
 
@@ -68,11 +80,11 @@
 						<a href="" class="show-btn btn-cancel">取 消</a>
 					</div>
 					<div class="col-xs-6">
-						<input type="submit" name="发 布"  class="show-btn btn-publish"/>
+						<input type="submit" value="发布" class="show-btn btn-publish" 、>
 					</div>
 				</div>
+                </form>
 			</div>
-            </form>
 		</div>
 	</div>
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>蜗牛直播后台</title>
+    <meta name="description" content="蜗牛移动">
+    <meta name="author" content="woniu" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="common/bootstrap.min.css">
+    <link rel="stylesheet" href="css/online_nop.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container container-fluid">
+			<div class="header row">
+				<div class="col-xs-2">
+					<a class="logo" href=""></a>
+				</div>
+  				<div class="col-xs-7 header-center">
+  					<em class="big-font">蜗牛直播</em>
+					<em class="little-font">后台管理系统</em>
+  				</div>
+  				<div class="col-xs-3 header-right">
+					<em class="username">陈伟飞</em>
+					<em class="erect"> | </em>
+					<a class="login-out" href="">退出</a>
+				</div>
+			</div>
+
+			<div class="main">
+				<div class="login-bar">
+					<a href="javascript:history.go(-1)" class="login-bar-left"></a>
+					<div class="login-bar-right">在线人数设置</div>
+				</div>
+				<form action="" method="post">
+				<div class="fit-area">
+					<div class="fit-base">
+						<div class="col-xs-4 align-right">额外打入基数：</div>
+						<div class="col-xs-8">
+							<input class="base-input" name="basenum" type="text" placeholder="需为正整数">
+						</div>
+					</div>
+
+					<div class="fit-time">
+						<div class="col-xs-4 align-right">时间段设置：</div>
+						<div class="col-xs-5">
+							<input class="width-100" type="text" name="timeone" placeholder="需为正整数">
+						</div>
+						<div class="col-xs-3">0点-8点</div>
+					</div>
+
+					<div class="fit-time-8">
+						<div class="col-xs-4 align-right"></div>
+						<div class="col-xs-5">
+							<input class="width-100" name="timetwo" type="text" placeholder="需为正整数">
+						</div>
+						<div class="col-xs-3">8点-14点</div>
+					</div>
+
+					<div class="fit-time-14">
+						<div class="col-xs-4 align-right"></div>
+						<div class="col-xs-5">
+							<input class="width-100" name="timethree" type="text" placeholder="需为正整数">
+						</div>
+						<div class="col-xs-3">14点-23点</div>
+					</div>
+
+					<div class="fit-undulate">
+						<div class="col-xs-4 align-right">人数波动范围：</div>
+						<div class="col-xs-8">
+							<input class="undulata-input" name="undulatanum" type="text" placeholder="需为正整数">
+						</div>
+					</div>
+
+					<div class="fit-font">
+						<div class="col-xs-12">在以上人数的技术上，额外加上0-你设置数值之间的波动值</div>
+					</div>
+				</div>
+					
+				<div class="fit-btn">
+					<input type="submit" value="保 存" class="common-btn"/>
+				</div>
+                </form>
+			</div>
+
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="common/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

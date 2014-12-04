@@ -13,7 +13,9 @@ $(function(){
 	$('body').on('click', '.ul-wrap li span', function(event) {
 		event.preventDefault();
 		$('#pd-show').text($(this).text());
-		console.log($('#pd-show').text());
+        //console.log($(this).find("a").attr("href"));
+        window.location.href=$(this).find("a").attr("href");
+		//console.log($('#pd-show').text());
 		$.unblockUI();
 	});
 })

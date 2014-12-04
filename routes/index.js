@@ -11,7 +11,12 @@ router.get('/addSpecial',special.index);
 router.post('/addSpecial', special.addSpecial);
 
 router.get('/editSpecial/:sid', special.showEdit);
-router.post('/updateSpecial',special.update);
+router.post('/editSpecial',special.update);
+
+router.get('/addCategory',category.index);
+router.post('/addCategory',category.addCategory);
+
+
 
 /*
 router.get('/user/:id', function (req, res, next) {
@@ -23,8 +28,7 @@ router.get('/user/:id', function (req, res) {
     console.log('and this matches too');
     res.end();
 });*/
-router.get('/addCategory',category.index);
-router.post('/addCategory',category.addCategory);
+
 //router.get('editCategory/:id',category.renderById);
 //router.post('editCategory/:id',category.updateById);
 

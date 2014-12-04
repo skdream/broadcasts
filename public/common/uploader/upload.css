@@ -105,11 +105,18 @@ table {
     width: 102px;
     height: 35px;
     display: block;
+    background: url("../../images/big.png") center no-repeat;
+    background-size: 102px 35px;
+    margin:0 auto;
+}
+#uploader .placeholder .webuploader-pick2 {
+    width: 102px;
+    height: 35px;
+    display: block;
     background: url("../../images/little.jpg") center no-repeat;
     background-size: 102px 35px;
     margin:0 auto;
 }
-
 /*#uploader .placeholder .webuploader-pick-hover {
     background: #00a2d4;
 }

@@ -91,6 +91,7 @@
 	background-color:#7bbe6e;
 }
 .show-btn{
+    border: 0;
 	color: #fff;
 	display: inline-block;
 	margin-bottom: 0;

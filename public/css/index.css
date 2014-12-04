@@ -323,3 +323,22 @@
 /*.blockMsg ul li:hover{
 	background: #eeeeee;
 }*/
+.summary{
+    font: 10px/10px "微软雅黑";
+    color: #666;
+    padding:10px;
+}
+table th{
+    font: 10px/10px "微软雅黑";
+    color: #666;
+    background: #f6f6f6;
+}
+table th a{
+    font: 10px/10px "微软雅黑";
+    color: #666;
+}
+table td{
+    font: 10px/25px "微软雅黑";
+    color: #666;
+    background: #fff;
+}
