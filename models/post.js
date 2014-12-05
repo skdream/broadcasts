@@ -6,10 +6,11 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var PostSchema = new Schema({
-	category_id:{type:ObjectId},
-    special_id:{type: ObjectId},
+	category_id:{type:String},
+    special_id:{type: String},
     title:{type: String},
     content:{type:String},
+    author:{type:String},
     pic_url:{type:String},
     create_at:{type: Date, default:Date.now},
     update_at:{type:Date, default:Date.now}

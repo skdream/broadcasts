@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var special = require('../controllers/special');
 var category = require('../controllers/category');
+var post     = require('../controllers/post');
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
@@ -16,6 +17,7 @@ router.post('/editSpecial',special.update);
 router.get('/addCategory',category.index);
 router.post('/addCategory',category.addCategory);
 
+router.get('/post/:cid/:sid/:page',post.index);
 
 
 /*

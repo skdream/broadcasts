@@ -10,35 +10,29 @@ var Post = models.Post;
 exports.newAndSave = function(opt, callback){
 
     var post = new Post();
-
         post.title       = opt.title;
         post.category_id = opt.category_id;
         post.special_id  = opt.special_id;
         post.content     = opt.content;
+        post.author      = opt.author;
         post.pic_url     = opt.pic_url;
     post.save(callback);
 
 };
-/*
-exports.updateSpecialById = function (specialId, title, callback) {
-    Special.findOne({_id:specialId},function(err, special){
-        if(err || !special){
-            return callback(err);
-        }
-        special.title = title;
-        special.update_at = new Date();
-        special.save(callback);
-    })
+exports.update = function(query, update, options, callback){
+
+    Post.findOneAndUpdate(query, update, options, callback);
 };
 
-exports.getSpecialById = function (specialId, callback) {
+exports.getPostByParams = function(cid, sid, page, callback){
 
-    Special.findOne({_id : specialId},function(err, special){
-
-        if(err ){
-            return callback(err);
+    var query = {category_id:cid, special_id:sid};
+    var options = {skip:(page-1)*10,limit:10};
+    Post.find(query,{}, options,function(err,posts){
+        if(err){
+            return next(err);
         }
-        callback(err, special);
-    })
-};
-*/
+        callback(null,posts);
+    });
+}
+
